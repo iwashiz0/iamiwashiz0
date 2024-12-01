@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+find . -name "*.sh" | xargs chmod a+x
+find . -name "*.bash" | xargs chmod a+x
+
+set -e
+
+gem install bundler
+bundle install
